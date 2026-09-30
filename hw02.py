@@ -1,21 +1,29 @@
+"""
+Ruby Tricca
+
+"""
+
 # Task 1.1:
 #  Complete the function "read_two_ints" below:
 def read_two_ints():
         
-    # ADD a Docstring for this function
-    # the return shown below is a placeholder to make sure this runs
-    # TODO: complete the function instead of the line shown below
+    #asks users to input values for variables x and y and returns the values
     x = int(input("give me x: "))
     y = int(input("give me y: "))
     return x,y
 
 # Task 2.1:
-#  Complete the function "compute_multadd" below:
+"""
+        The function below uses the multiplication and addition
+        operators to compute the numerator and denominator of the fraction.
+        It takes in the values of x and y defined by the user input in the
+        previous function.
+        
+"""
+  
 def compute_multadd(x,y):
      
-    # ADD a Docstring for this function
-    # the pass shown below is a placeholder to make sure this runs
-    # TODO: complete the function instead of the line shown below
+    # calculates the numerator and denominator of a fraction, and returns the quotient
     numerator = (x*y)
     print(f"mult result: {numerator}")
     denominator = (x+y)
@@ -23,37 +31,37 @@ def compute_multadd(x,y):
     return numerator/denominator
     
 # Task 3.1:
-#  Complete the function "print_fancy" below:
+
+"""
+        The function below prints the variable and return values from the functions
+        above. It then uses the multiplication operator to create a line of * above and
+        a line of = below the printed statements. 
+"""
+    
 def print_fancy(x, y, xy_multadd):
-    # ADD a Docstring for this function
-    # the pass shown below is a placeholder to make sure this runs
-    # TODO: complete the function instead of the line shown below
+    
+    # prints the variables x and y and the  results of the operations above
     print("*"*16)
     print("RESULTS:")
     print(f"first number: {x}")
     print(f"second number: {y} ")
     print(f"multadd result: {xy_multadd}")
     print("="*16)
+    
+"""
+        The main function below calls each of the functions
+        defined above, including arguments where applicable.
+        
+"""
 def main ():
-    # ADD a Docstring for this function
+    # calls the functions defined above 
     # Task 1.2:
-    #  Add one line below to call read_two_ints (note that it returns two values)
-    #  the call should provide no arguments
-    #  store the returned values into two variables: x and y
     x, y = read_two_ints()
              
     # Task 2.2:
-    #  Add one line below to call multadd (note that it returns one value)
-    #  the call should provide the arguments x, and y you obtained above;
-    #  store the returned value in a variable called xy_multadd
-        #compute_multadd(x,y):
     xy_multadd=compute_multadd(x,y)
 
     # Task 3.2:
-    #  Complete The line below to call print_fancy
-    #  the call should provide the arguments x, y, and xy_multadd you obtained above;
-    #def print_fancy(a, b, ab_multadd):
-       # result = print_fancy(a,b,ab_multadd)
     print_fancy(x, y, xy_multadd)
 
 
