@@ -54,7 +54,7 @@ You need to do the following:
   2. verify it accepts two parameters, `a`, and `b`;
   3. remove the `pass` keyword and replace it with the following steps;
   4. inside, you should first calculate the numerator of the operation indicated above (`a*b`) and save it in a variable;
-  5. Then, you should print the variable holding the result of a\b with the following format: \
+  5. Then, you should print the variable holding the result of `a*b` with the following format: \
      `"mult result: <result of a*b>"`\
      Again, the `< ... >` notation is a placeholder for you to replace with the actual value or variable... for example, if the result of a\*b is 15, the printout should be: \
      `"mult result: 15"`
@@ -187,12 +187,12 @@ The program:
 
   The submission (check boxes after you complete each step):
 
-    - [ ] you added your name to the top comments of the python file
-    - [ ] runs without syntax errors (or -50%)
-    - [ ] adds a few small but informative comments (or -5%)
-    - [ ] adds docstrings to each function (or -5%)
-    - [ ] Passes all tests (or lose 15% per missed test). If you do not pass all tests, do not check this box
-    - [ ] You checked the correct boxes
+    - [x] you added your name to the top comments of the python file
+    - [x] runs without syntax errors (or -50%)
+    - [x] adds a few small but informative comments (or -5%)
+    - [x] adds docstrings to each function (or -5%)
+    - [x] Passes all tests (or lose 15% per missed test). If you do not pass all tests, do not check this box
+    - [x] You checked the correct boxes
 
 
 ## Submitting
